@@ -1,0 +1,30 @@
+.search-input {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    color: var(--color-graphite);
+  }
+
+  &__input {
+    height: var(--input-height);
+    width: 100%;
+    border: var(--border-sm);
+    border-radius: 71px;
+    padding-inline: 20px;
+    padding-left: 56px;
+    font-size: 16px;
+    color: var(--color-midnight);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1px 3px 0 #00000033;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@mixin responsive-font($min, $max) {
+  font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin reset-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}

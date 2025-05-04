@@ -1,0 +1,31 @@
+.container {
+  max-width: calc(var(--container-width) + 2 * var(--container-padding-x));
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+@for $i from 1 through 12 {
+  .col-span-#{$i} {
+    grid-column: span $i;
+  }
+
+  .row-span-#{$i} {
+    grid-row: span $i;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.disable-scroll {
+  overflow: hidden;
+}

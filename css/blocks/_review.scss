@@ -1,0 +1,30 @@
+.review {
+  min-width: 540px;
+
+  padding: 35px;
+  border: var(--border-sm);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 21px 0 #d1d1d140;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  &__user-name {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: var(--color-graphite);
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,54 @@
+.post {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-blue);
+
+  @include mobile {
+    flex-direction: column;
+    max-width: 320px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+  }
+
+  &__publish-date {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 8px;
+    background-image: url('../../img/icons/clocks.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 14px;
+    color: var(--color-graphite);
+  }
+
+  &__title {
+    @include responsive-font(18, 24);
+
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+
+  &__short-description {
+    font-size: 14px;
+    color: var(--color-graphite);
+    margin-bottom: 14px;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+
+  &__cover {
+    align-self: flex-start;
+    object-fit: contain;
+    width: clamp(200px, 35%, 350px);
+  }
+}

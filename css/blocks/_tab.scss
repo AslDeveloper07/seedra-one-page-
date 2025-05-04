@@ -1,0 +1,26 @@
+.tab {
+  @include reset-button;
+  @include flex-center;
+
+  border: var(--border);
+  border-radius: var(--border-radius-md);
+  padding: 15px 20px;
+  gap: 8px;
+  color: var(--color-midnight);
+  height: 70px;
+
+  &:hover {
+    border-color: #35974014;
+  }
+
+  &--active {
+    border-color: var(--color-green) !important;
+    color: var(--color-green);
+  }
+
+  &__title {
+    @include uppercase;
+
+    font-size: 14px;
+  }
+}

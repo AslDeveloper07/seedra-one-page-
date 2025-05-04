@@ -1,0 +1,60 @@
+.testimonials {
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+      text-align: start;
+    }
+  }
+
+  &__reviews-list {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    margin-bottom: 24px;
+
+    @include mobile {
+      overflow-x: auto;
+      gap: 10px;
+    }
+  }
+
+  .review {
+    @include mobile {
+      min-width: 320px;
+      padding: 20px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__prev-button,
+  &__next-button {
+    height: 30px;
+    padding-inline: 15px;
+
+    &:hover {
+      color: var(--color-forest);
+    }
+  }
+
+  &__prev-button svg {
+    transform: rotate(90deg);
+  }
+
+  &__next-button svg {
+    transform: rotate(-90deg);
+  }
+}

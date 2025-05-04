@@ -1,0 +1,6 @@
+@import 'normalize', 'variables', 'mixins', 'media', 'utils', 'base';
+
+@import 'blocks/socials', 'blocks/button', 'blocks/product-card', 'blocks/header',
+  'blocks/search-input', 'blocks/mobile-menu', 'blocks/hero', 'blocks/catalog', 'blocks/footer',
+  'blocks/tab', 'blocks/faq', 'blocks/accordion', 'blocks/review', 'blocks/testimonials',
+  'blocks/blog', 'blocks/post';

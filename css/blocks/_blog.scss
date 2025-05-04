@@ -1,0 +1,41 @@
+.blog {
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      gap: 16px;
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .post {
+    @include mobile {
+      padding: 20px;
+      flex-shrink: 0;
+    }
+
+    &:first-child {
+      background-color: var(--color-mint);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.socials {
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__link {
+    @include square(24px);
+    @include flex-center;
+
+    color: var(--color-graphite);
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      color: var(--color-green);
+    }
+  }
+}
