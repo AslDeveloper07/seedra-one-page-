@@ -1,6 +1,5 @@
 .testimonials {
   margin-bottom: 60px;
-
   @include mobile {
     margin-bottom: 30px;
   }
@@ -18,8 +17,10 @@
   &__reviews-list {
     display: flex;
     gap: 30px;
-    overflow-x: hidden;
+    overflow-x: auto;
     margin-bottom: 24px;
+
+
 
     @include mobile {
       overflow-x: auto;

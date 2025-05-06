@@ -1,8 +1,9 @@
 .product {
   position: relative;
-  border: var(--border);
+  border: 1px solid rgba(158, 158, 158, 0.356);
   border-radius: var(--border-radius-md);
   padding: 25px;
+  transition: all ease 0.3s;
 
   &__image {
     margin-bottom: 24px;
@@ -49,4 +50,7 @@
     color: var(--color-goldenrod);
     background-color: var(--color-white);
   }
+}
+.product:hover{
+  border: 1px solid rgb(0, 161, 0);
 }

@@ -4,10 +4,21 @@
   padding: 30px;
   border-radius: var(--border-radius-lg);
   background-color: var(--color-blue);
+  overflow: hidden;
+
 
   @include mobile {
     flex-direction: column;
-    max-width: 320px;
+    max-width: 1220px;
+    width: 100%;
+    &__cover {
+      align-self: flex-start;
+      object-fit: contain;
+      max-width: 140px;
+      position: relative;
+      right: -10px;
+      bottom: -30px;
+    }
   }
 
   &__content {
@@ -49,6 +60,10 @@
   &__cover {
     align-self: flex-start;
     object-fit: contain;
-    width: clamp(200px, 35%, 350px);
+    width: 240px;
+    position: relative;
+    right: -30px;
+    bottom: -30px;
   }
+
 }
