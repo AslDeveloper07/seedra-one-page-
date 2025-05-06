@@ -1,0 +1,23 @@
+{
+  "name": "seedra-one-page-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AslDeveloper07/seedra-one-page-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AslDeveloper07/seedra-one-page-/issues"
+  },
+  "homepage": "https://github.com/AslDeveloper07/seedra-one-page-#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -16,19 +16,23 @@ tabs.forEach((tab) => {
     tab.classList.toggle('tab--active');
   });
 });
-
 const accordions = document.querySelectorAll('.accordion');
 
 accordions.forEach((accordion) => {
   const accordionButton = accordion.querySelector('.accordion__header');
+
   accordionButton.addEventListener('click', () => {
+
+    accordions.forEach((item) => {
+      if (item !== accordion) {
+        item.classList.remove('accordion--active');
+      }
+    });
+
+
     accordion.classList.toggle('accordion--active');
   });
 });
-
-const reviewsList = document.querySelector('.testimonials__reviews-list');
-const nextButton = document.querySelector('#next-button');
-const prevButton = document.querySelector('#prev-button');
 
 reviewsList.scrollLeft = (reviewsList.scrollWidth - reviewsList.clientWidth) / 2;
 
