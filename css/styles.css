@@ -309,6 +309,12 @@ a {
   font-weight: 500;
   line-height: 1.78;
 }
+@media (max-width: 786px) {
+  .button {
+    font-size: 16px;
+    padding: 5px 27px;
+  }
+}
 .button--primary {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -747,6 +753,11 @@ a {
   display: flex;
   gap: 12px;
 }
+@media (max-width: 786px) {
+  .hero__actions {
+    flex-direction: column;
+  }
+}
 .hero__image {
   position: relative;
   left: 38px;
@@ -963,7 +974,7 @@ a {
   margin-bottom: 10px;
 }
 .faq__form-wrapper {
-  padding: 50px 25px 20px;
+  padding: 30px 25px 20px;
   border-radius: var(--border-radius-lg);
   background-color: var(--color-mint);
 }
@@ -989,7 +1000,7 @@ a {
   border: var(--border-sm);
   border-radius: var(--border-radius-md);
   margin-bottom: 12px;
-  padding: 15px 20px;
+  padding: 15px 15px;
   color: var(--color-midnight);
   transition-property: box-shadow;
 }
@@ -1182,6 +1193,7 @@ a {
     flex-direction: column;
     max-width: 1220px;
     width: 100%;
+    height: 260px;
   }
   .post__cover {
     align-self: flex-start;
@@ -1229,6 +1241,14 @@ a {
   position: relative;
   right: -30px;
   bottom: -30px;
+}
+@media (max-width: 786px) {
+  .post__cover {
+    width: 140%;
+    display: none;
+    right: -260px;
+    bottom: -15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -107,7 +107,9 @@
   &__actions {
     display: flex;
     gap: 12px;
-
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__image {

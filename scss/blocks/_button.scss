@@ -7,7 +7,10 @@
   border-radius: var(--border-radius-md);
   font-weight: 500;
   line-height: 1.78;
-
+  @include mobile {
+    font-size: 16px;
+    padding: 5px 27px;
+  }
   &--primary {
     background-color: var(--color-green);
     color: var(--color-white);
@@ -39,12 +42,10 @@
   &--variant {
     background-color: var(--color-white);
     color: var(--color-green);
-      border: 1px solid #35974031;
-
+    border: 1px solid #35974031;
 
     &:hover {
-      background-color:  #75ff8531;
-
+      background-color: #75ff8531;
     }
 
     &:active {
@@ -53,7 +54,7 @@
   }
 
   &--bordered {
-    &:hover{
+    &:hover {
       border: 1px solid #35974031;
     }
 
@@ -61,8 +62,8 @@
       border-color: var(--color-green);
     }
     @include mobile {
-     font-size: 13px;
-     padding: 5px 27px
+      font-size: 13px;
+      padding: 5px 27px;
     }
   }
 }
@@ -92,8 +93,7 @@
   &--bordered {
     @include mobile {
       font-size: 14px;
-      // padding: 5px 27px
-     }
+    }
     border: 1px solid var(--color-light-gray);
 
     &:active {
