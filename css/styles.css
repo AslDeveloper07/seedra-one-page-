@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -598,6 +599,7 @@ a {
   z-index: 4;
   transform: translateX(110%);
   transition: transform var(--transition-duration);
+  overflow-y: scroll;
 }
 @media (max-width: 786px) {
   .mobile-menu {
@@ -612,9 +614,6 @@ a {
 }
 .mobile-menu__list {
   margin-bottom: 20px;
-}
-.mobile-menu__item {
-  margin-bottom: 14px;
 }
 .mobile-menu__item:nth-child(4) {
   margin-bottom: 0;
@@ -649,6 +648,111 @@ a {
 }
 .mobile-overlay--active {
   display: block;
+}
+
+/* Toggle Menu Container */
+.toggle-menu {
+  max-width: 300px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* Menu Header */
+.menu-header {
+  background-color: transparent;
+  font-family: "Lexend", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-header:hover {
+  color: #4CAF50;
+}
+
+/* Menu Content */
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Menu Items */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 5px 0px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.menu-list li:hover {
+  color: #4CAF50;
+}
+
+.menu-list li:hover {
+  background-color: rgba(76, 175, 79, 0.1215686275);
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+/* Section Headers */
+.section-header {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Active State */
+.active .menu-content {
+  max-height: 1000px;
+}
+
+/* Arrow Icon Animation */
+.arrow {
+  transition: transform 0.3s ease-out;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.arrow::before {
+  width: 10%;
+}
+
+.arrow_down {
+  width: 10%;
+}
+
+@keyframes rotateDown {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/* Menu Icons */
+.menu-icon {
+  font-size: 1.2rem;
+  color: #4CAF50;
 }
 
 .hero {

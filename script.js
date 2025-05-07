@@ -38,3 +38,18 @@ accordions.forEach((accordion) => {
     accordion.classList.toggle('accordion--active');
   });
 });
+
+function toggleMenu(header) {
+  const menu = header.parentElement;
+  const allMenus = document.querySelectorAll('.toggle-menu');
+
+  // Close all other menus first
+  allMenus.forEach(otherMenu => {
+    if (otherMenu !== menu) {
+      otherMenu.classList.remove('active');
+    }
+  });
+
+  // Toggle the clicked menu
+  menu.classList.toggle('active');
+}
