@@ -105,6 +105,11 @@ svg * {
   --color-mint: #eaf1eb;
   --color-goldenrod: #ffcf55;
   --color-blue: #eff2f8;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --button-bg: #000000;
+  --button-icon: #2ecc71; /* green */
+  --button-hover: #333333;
   --border: 2px solid var(--color-light-gray);
   --border-sm: 1px solid var(--color-light-gray);
   --border-radius: 4px;
@@ -731,14 +736,6 @@ a {
   transition: transform 0.3s ease-out;
   font-size: 1.2rem;
   display: inline-block;
-}
-
-.arrow::before {
-  width: 10%;
-}
-
-.arrow_down {
-  width: 10%;
 }
 
 @keyframes rotateDown {

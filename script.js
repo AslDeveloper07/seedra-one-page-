@@ -53,3 +53,4 @@ function toggleMenu(header) {
   // Toggle the clicked menu
   menu.classList.toggle('active');
 }
+
