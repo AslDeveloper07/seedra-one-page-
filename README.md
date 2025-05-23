@@ -41,4 +41,3 @@ To run Seedra locally:
 
 ```bash
 git clone https://github.com/AslDeveloper07/seedra-one-page-.git
-cd seedra-one-page-
