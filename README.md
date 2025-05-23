@@ -1,30 +1,34 @@
 # Seedra
 
-**Seedra** is a modern and responsive e-commerce website designed for selling vegetable and melon seeds online. The platform offers a clean and user-friendly interface, making it easy for customers to browse, select, and purchase high-quality seeds for their home gardens or farms.
+**Seedra** is a clean and responsive website for selling vegetable and melon seeds online. The website is built using HTML, JavaScript, and styled with **Sass (Syntactically Awesome Stylesheets)** for more structured and maintainable CSS.
 
-## 🌱 Features
+## 🌾 Overview
 
-- 🛒 Online seed catalog with search and filtering options
-- 📦 Add to cart and checkout functionality
-- 🔍 Product detail pages with images and descriptions
-- 📱 Fully responsive design for mobile and desktop
-- 🌍 Multilingual support (future update)
-- 🧾 Contact form for customer inquiries
+Seedra provides an easy-to-use interface for customers to browse different seed categories, view product details, and make purchases online. It is designed with gardeners and home-growers in mind.
+
+## ✨ Features
+
+- Responsive and mobile-friendly layout
+- Product catalog with categories and filters
+- Shopping cart functionality
+- Product detail pages with images and descriptions
+- Contact form for customer support
+- Sass-based styling with modular structure
+
+## 📦 Technologies Used
+
+- HTML5
+- JavaScript (Vanilla JS)
+- Sass (SCSS)
+- Icons via [Remix Icon](https://remixicon.com/)
+- Optional: EmailJS or Formspree for contact form handling
 
 ## 🚀 Getting Started
 
-Follow these steps to run the Seedra website locally on your computer.
+Follow these steps to run Seedra on your local machine:
 
-### Prerequisites
+### 1. Clone the Repository
 
-Make sure you have the following installed:
-
-- Node.js (LTS version)
-- A code editor (e.g., VS Code)
-- Git (optional, for cloning)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/seedra.git
+```bash
+git clone https://github.com/your-username/seedra.git
+cd seedra
