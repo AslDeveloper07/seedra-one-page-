@@ -1,33 +1,43 @@
-# Seedra
+# 🌱 Seedra - Vegetable & Melon Seeds Online Store
 
-**Seedra** is a clean and responsive website for selling vegetable and melon seeds online. The website is built using HTML, JavaScript, and styled with **Sass (Syntactically Awesome Stylesheets)** for more structured and maintainable CSS.
+**Seedra** is a clean, responsive, and user-friendly website for selling vegetable and melon seeds online. Built with **HTML**, **CSS (Sass optional)**, and **JavaScript**, Seedra aims to provide gardeners and home-growers with an easy way to browse, select, and purchase seeds.
 
-## 🌾 Overview
+## 🎨 Design (Figma)
 
-Seedra provides an easy-to-use interface for customers to browse different seed categories, view product details, and make purchases online. It is designed with gardeners and home-growers in mind.
+Check out the detailed Figma design here:  
+👉 [Seedra Figma Design](https://www.figma.com/design/tnGlAMrUBkC1oyPU2laxtY/Seedra--Copy-?node-id=0-1&p=f&t=mMCHY050P7HiGw2g-0)
+
+
+## 📄 Overview
+
+Seedra features a modern, mobile-friendly layout with:  
+- Product categories and filtering options  
+- Detailed product pages with images and descriptions  
+- Shopping cart functionality  
+- Contact/support form  
+- Smooth navigation and animations
 
 ## ✨ Features
 
-- Responsive and mobile-friendly layout
-- Product catalog with categories and filters
-- Shopping cart functionality
-- Product detail pages with images and descriptions
-- Contact form for customer support
-- Sass-based styling with modular structure
+- Fully responsive design for all devices  
+- Sass-based modular CSS for maintainability (optional)  
+- Vanilla JavaScript for interactivity  
+- Icon support via [Remix Icon](https://remixicon.com/)  
+- Contact form integration (can be connected to EmailJS, Formspree, etc.)
 
-## 📦 Technologies Used
+## 🛠 Technologies Used
 
-- HTML5
-- JavaScript (Vanilla JS)
-- Sass (SCSS)
-- Icons via [Remix Icon](https://remixicon.com/)
-- Optional: EmailJS or Formspree for contact form handling
+- HTML5  
+- CSS3 / Sass (optional)  
+- JavaScript (Vanilla)  
+- Remix Icon  
+- Optional: EmailJS or Formspree for contact forms
 
 ## 🚀 Getting Started
 
-Follow these steps to run Seedra on your local machine:
+To run Seedra locally:
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/seedra.git
